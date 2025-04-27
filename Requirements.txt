@@ -1,0 +1,11 @@
+pandas==2.2.2
+numpy==1.26.4
+yfinance==0.2.38
+python-binance==1.0.17
+textblob==0.18.0.post0
+matplotlib==3.8.4
+seaborn==0.13.2
+scipy==1.13.0
+tqdm==4.66.2
+ollama==0.1.8
+openpyxl==3.1.2
