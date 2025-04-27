@@ -5,6 +5,12 @@ This project creates a near real-time crypto advisor by combining technical anal
 
 ---
 
+## 🖥️ Demo
+
+![Crypto Advisor Demo](https://i.imgur.com/jNrEqgG.gif)
+
+---
+
 ## 🎯 Objective
 * Near real-time monitoring of technical momentum (RSI, MACD Histogram).
 * Detection of bullish/bearish news events via AI-enhanced sentiment (DeepSeek LLM).
@@ -39,12 +45,6 @@ This project creates a near real-time crypto advisor by combining technical anal
 * 🧠 AI-Based Crypto News Sentiment Scoring
 * 📈 Dynamic Portfolio Optimization (Markowitz Model)
 * 📊 Advisor-Style Interactive Dashboard in Power BI
-
----
-
-## 🖥️ Demo
-
-![Crypto Advisor Demo](https://i.imgur.com/jNrEqgG.gif)
 
 ---
 
