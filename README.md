@@ -9,6 +9,10 @@ This project creates a near real-time crypto advisor by combining technical anal
 
 ![Crypto Advisor Demo](https://i.imgur.com/jNrEqgG.gif)
 
+## 👉 Click the image to watch the full demo!
+
+[![Crypto Advisor Demo](https://img.youtube.com/vi/1VYrvgYoksQ/hqdefault.jpg)](https://youtu.be/1VYrvgYoksQ)
+
 ---
 
 ## 🎯 Objective
