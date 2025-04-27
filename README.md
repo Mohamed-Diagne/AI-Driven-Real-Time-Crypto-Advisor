@@ -1,77 +1,77 @@
-# 🚀 AI-Driven Real Time Crypto Advisor
+# 🚀 AI-Driven Real Time Crypto Advisor with Power BI Integration
 
 ## Overview
-This project builds a full crypto advisory system combining real-time technical analysis, AI-driven sentiment analysis, dynamic portfolio optimization, and Power BI visualization.  
-It integrates data from Binance and Yahoo Finance, processes it with advanced analytics, and feeds updated insights every 5 minutes into Power BI for near real-time decision making.
+This project creates a near real-time crypto advisor by combining technical analysis, AI-based sentiment analysis, and dynamic portfolio optimization, all visualized through a Power BI dashboard.
 
 ---
 
 ## 🎯 Objective
-* Analyze crypto market conditions in near real-time.
-* Compute technical indicators on 5-minute candles.
-* Perform sentiment analysis on crypto news with TextBlob and DeepSeek AI.
-* Dynamically optimize portfolio weights using Markowitz Sharpe ratio maximization.
-* Automate data refresh to Power BI via batched `.py` script.
+* Near real-time monitoring of technical momentum (RSI, MACD Histogram).
+* Detection of bullish/bearish news events via AI-enhanced sentiment (DeepSeek LLM).
+* Dynamic allocation shifts captured through rolling optimization (Markowitz Sharpe maximization).
+* Provide advisors with a Power BI interactive dashboard for crypto decision-making.
 
 ---
 
-## 🛠 Methodologies Implemented
-**Technical Analysis:**
-* SMA, EMA, RSI, MACD, Bollinger Bands, Stochastic Oscillator, OBV.
+## 🛠 Components
 
-**Sentiment Analysis:**
-* Basic: TextBlob polarity scoring on news summaries.
-* Advanced: DeepSeek AI via Ollama for enhanced sentiment classification (Positive/Neutral/Negative) and justification generation.
+**Main Scripts:**
+- `CryptoAdvisor.ipynb` — Interactive notebook for data exploration, modeling, and visualization.
+- `CryptoPr.py` — Production-ready Python script scheduled every 5 minutes to update data for Power BI.
 
-**Portfolio Optimization:**
-* Markowitz Sharpe Ratio maximization with constraints (max weight 40%).
-* Rolling 30-period window and rebalancing every 5 periods.
-
-**Visualization and Reporting:**
-* Real-time insights integrated into Power BI.
-* Cumulative returns and risk profile tracked visually.
+**Techniques Implemented:**
+- Fetch 5-minute candle data from Binance and Yahoo Finance APIs.
+- Compute technical indicators: RSI, MACD, Bollinger Bands, OBV, Stochastic Oscillator.
+- Perform AI-based sentiment analysis on news using TextBlob and DeepSeek via Ollama.
+- Dynamically optimize portfolio allocation with rolling Markowitz Sharpe maximization.
+- Persist data into CSV files (`combined_df.csv`, `latest_df.csv`) for Power BI integration.
 
 ---
 
 ## 📚 Data
-**Sources:**
-* Binance API (5-minute interval data for 25+ crypto assets).
-* Yahoo Finance API (`yfinance`) for news headlines.
-
-**Assets Covered:**
-* Major cryptocurrencies: Bitcoin (BTC), Ethereum (ETH), Solana (SOL), Cardano (ADA), etc.
+* Cryptocurrencies: BTC, ETH, SOL, ADA, BNB, DOT, AVAX, etc.
+* APIs: Binance API (real-time 5m candles), Yahoo Finance API (news scraping).
 
 ---
 
-## 🖥️ Components
-* **AI_Crypto_Advisor.ipynb**:  
-  Full exploratory notebook for technical indicators, sentiment analysis, optimization, and visualization.
-
-* **CryptoPr.py**:  
-  Batched script that runs every 5 minutes to:
-  * Refresh crypto data and compute indicators.
-  * Update latest AI sentiment analysis.
-  * Re-optimize portfolio weights.
-  * Export updated CSVs for Power BI integration.
-
-* **Power BI Dashboard**:  
-  Visualizes the portfolio insights (RSI, MACD, cumulative return, dynamic allocation) refreshed automatically every 5 minutes.
+## 📈 Key Features
+* 📉 Real-Time Technical Indicator Tracking
+* 🧠 AI-Based Crypto News Sentiment Scoring
+* 📈 Dynamic Portfolio Optimization (Markowitz Model)
+* 📊 Advisor-Style Interactive Dashboard in Power BI
 
 ---
 
-## 📈 Key Results
-* Near real-time monitoring of technical momentum (RSI, MACD Histogram).
-* Detection of bullish/bearish news events via AI-enhanced sentiment.
-* Dynamic allocation shifts captured through rolling optimization.
-* Power BI provides an interactive, advisor-style interface for portfolio management.
+## 🖥️ Demo
 
-**Example Demo:**
-![Crypto Advisor Demo](https://i.imgur.com/YxkZsma.gif)
+![Crypto Advisor Demo](https://i.imgur.com/jNrEqgG.gif)
 
 ---
 
 ## 🚀 How to Run
+
 1. Clone the repository.
-2. Install dependencies:
+2. Install all required packages:
 ```bash
 pip install -r requirements.txt
+```
+
+## 🔮 Future Improvements
+* Extend crypto coverage to DeFi protocols and Layer 2 tokens.
+* Integrate crypto options/volatility metrics (e.g., Skew, IV) for richer insights.
+* Apply LLMs for real-time crypto trend prediction directly into action signals.
+* Build a fully automated real-time crypto trading bot exploiting on-chain weaknesses and decentralized market inefficiencies.
+
+---
+
+## 📖 References
+* Binance API Documentation
+* Yahoo Finance API Documentation
+* DeepSeek Language Model via Ollama
+* Glasserman, P. (2004). *Monte Carlo Methods in Financial Engineering*. Springer.
+
+---
+
+## 📑 License
+This project is licensed for **educational and personal demonstration purposes only**.  
+It must **not** be used for commercial purposes or live trading without proper financial risk management and regulatory compliance.
